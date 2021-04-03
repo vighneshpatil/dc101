@@ -4,67 +4,100 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<link rel="icon" href="css/favicon.ico">
-
-	<title>Digital Citizen</title>
+	
+	<title>Cloud Computing</title>
 
 	<!-- Bootstrap core CSS -->
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" rel="stylesheet">
 
 	<!-- Responsive Video Slider CSS -->
 	<link href="css/rvslider.min.css" rel="stylesheet">
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+		html {
+			overflow: hidden;
+		}
+		header {
 
-	<!-- Custom styles for this template -->
-	<link href="css/docs.css" rel="stylesheet">
+			display: flex;
+			flex-direction: column;	
+			max-width: 100%;			
+			height: 20vh;
+			justify-content: center;
+			align-items: center;
+			width: auto;
+			margin-bottom: 20px;			
+		}
+		.txth1 {
+			font-family: 'Lato', sans-serif;			
+			background-color:sienna;	
+			color:#000;
+			font-size:100px;
+			border-radius: 5px;
+			max-width: 100%;
+						
+		}
+		.texth1h2 {
+			font-family: 'Lato', sans-serif;			
+			background-color:black;	
+			color:#fff;
+			font-size:15px;
+			font-weight: bold;
+			max-width: 100%;
+								
+		}
+		
+		body { 
+			background:  #000  !important; 
+			max-width: 100%;
+		} 
+		/* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
 
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-	<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
+		footer {
+			display: flex;
+			flex-direction: column;
+			max-width:100%;
+			height:5vh;
+			justify-content: center;
+			align-items: center;
+		}
+
+		
+		@media only screen and (max-device-width : 480px ) {
+			html body {
+				width: auto;
+			}
+			header 
+			.texth1
+			{
+				width:auto;
+				font-size: 50px;
+				
+			}
+			.rvs-container {
+				max-width: 100%;
+				width: auto;
+			}
+			.rvs-item-container,
+			.rvs-nav-container {
+				max-width: 100%;
+				width:auto;
+			
+			}
+		}
+	 </style>
 </head>
 
+</head>
 <body>
-
-<div>
-	<!-- Fixed navbar -->
-<nav class="navbar navbar-default navbar-fixed-top">
-	<div class="container">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand active">Cloud Computing</a>
-		</div>
-		<div id="navbar" class="navbar-collapse collapse">
-			<ul class="nav navbar-nav">
-				<li><a href="#">Getting started</a></li>
-				<li><a href="#">AWS</a></li>				
-				<li><a href="#">Licensing</a></li>
-			</ul>
-		
-		</div><!--/.nav-collapse -->
-	</div>
-</nav>
-<!-- Main component for a primary marketing message or call to action -->
-<div class="jumbotron">
-
-	<div class="container">
-		<h1>Digital Citizen</h1>
-		<p>An initiative to learn cloud computing </p>
-		
-	</div>
-
-</div>
-<div class="container">
-	<div class="rvs-container">
+	<header>
+		<h1 class="txth1">Digital Citizen Program</h1> 
+		<h2 class="texth1h2">Cloud Computing</h2> 
+		<h3 class="texth1h2">Learning via first principles</h3>
+	</header>
+<!-- Responsive Video Slider HTML: START -->
+<div class="rvs-container">
 
 	<div class="rvs-item-container">
 		<div class="rvs-item-stage">
@@ -115,11 +148,10 @@
 	</div>
 
 </div>
-</div>
 <!-- Responsive Video Slider HTML: END -->
-
-<div class="container">
-	<h4>Licensed under GPLv3 <br> @2021 prady04</h4>
+<footer>
+	<h4 class="texth1h2">Licensed Under GPLV3 @2021 prady04</h4>
+</footer>
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- Responsive Video Slider JS -->
