@@ -24,46 +24,13 @@
         font-weight: bold;
     }
    
-    .container.is-fluid {
-      justify-content: center;
-      align-items: center;
-      height:60vh;
-      top:0;
-
-    }
    
-
-.myButton {
-	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
-	background-color:#ffec64;
-	border-radius:10px;
-	border:2px solid #ffaa22;
-	display:inline-block;
-	cursor:pointer;
-	color:#333333;
-	font-family:Arial;
-	font-size:19px;
-	font-weight:bold;
-	padding:11px 33px;
-	text-decoration:none;
-  height: 33px;
-  width:11px;
-  justify-content: center;
-}
-.myButton:hover {
-	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
-	background-color:#ffab23;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
    </style>
 </head>
 <body>
     <section class="hero is-fullheight">
         <div class="hero-head">
-          <nav class="navbar">
+          <nav class="navbar has-dropdown">
             <div class="container">
               <div class="navbar-brand">
                 <a class="navbar-item">
@@ -80,7 +47,7 @@
                   <a class="navbar-item is-active" href="#">
                     Intro
                   </a>
-                  <a class="navbar-item" href="/aws.html">
+                  <a class="navbar-item has-dropdown"  href="/aws.html">
                     AWS 
                   </a>
                   <a class="navbar-item">
@@ -101,12 +68,8 @@
         </div>
       
         <div class="hero-body">
-          <div class="columns is-desktop">
-            <div class="column">
-              <figure class="image is-16by9">
-                  <iframe class="has-ratio" width="600" height="360" src="https://www.youtube.com/embed/YE7VzlLtp" frameborder="0" allowfullscreen></iframe>
-                </figure> 
-          </div>
+          <div class="columns ">
+            
               <div class="column">
               <figure class="image is-16by9">
                 <iframe class="has-ratio" width="600" height="360" src="https://www.youtube.com/embed/V9HIeARtk_M" frameborder="0" allowfullscreen></iframe>
