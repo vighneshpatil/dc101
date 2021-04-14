@@ -9,11 +9,23 @@
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+    <script defer src="script.js"></script>
     <!-- <link rel="stylesheet" href="styles/debug.css"> -->
    <style>
        .hero {
-	background:url(images/AWS.jpg) ;
+	background-image:url(images/AWS.jpg) ;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: black;
+ 
+  max-width: 100%;
+ 
     
+    }
+    html, body {
+      overflow: hidden;
     }
     .navbar-item {
         color:yellow;
@@ -28,7 +40,7 @@
    </style>
 </head>
 <body>
-    <section class="hero is-fullheight">
+    <section class="hero is-fullheight ">
         <div class="hero-head">
           <nav class="navbar has-dropdown">
             <div class="container">
@@ -44,7 +56,7 @@
               </div>
               <div id="navbarMenuHeroB" class="navbar-menu">
                 <div class="navbar-end">
-                  <a class="navbar-item is-active" href="https://prady04.github.io/dc101">
+                  <a class="navbar-item is-active" href="#">
                     Intro
                   </a>
                   <a class="navbar-item"  href="#">
@@ -69,31 +81,79 @@
         </div>
       
         <div class="hero-body">
-          <div class="columns ">
-            
-              <div class="column">
-              <figure class="image is-16by9">
-                <iframe class="has-ratio" width="600" height="360" src="https://www.youtube.com/embed/V9HIeARtk_M" frameborder="0" allowfullscreen></iframe>
-              </figure>
-            </div>
-            <div class="column">
-              <figure class="image is-16by9">
-                <iframe class="has-ratio" width="600" height="360" src="https://www.youtube.com/embed/EvuZfOvwdwY" frameborder="0" allowfullscreen></iframe>              
-              </figure>
-            </div>
-            <div class="column">
-              <figure class="image is-16by9">
-                <iframe class="has-ratio" width="600" height="360" src="https://www.youtube.com/embed/vVvW8LldOsM" frameborder="0" allowfullscreen></iframe>              
-              </figure>
-         
-           
-          </div>
-            
-          </div>
+          <div class="container is-clipped">
+            <div id="slider">
+             
+    
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image video-container is-16by9">                  
+                    <iframe type="text/html" class="has-ratio" width="600" height="360" src="https://www.youtube.com/embed/V9HIeARtk_M" frameborder="0" allowfullscreen></iframe>
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="item__title">
+                    Intro to AWS Mod 1
+                  </div>
+                  <div class="item__description">
+                   <strong>Basics of AWS</strong> 
+                  </div>
+                </div>
+              </div>
+    
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image video-container is-16by9">                  
+                    <iframe type="text/html" class="has-ratio" width="600" height="360" src="https://www.youtube.com/embed/EvuZfOvwdwY" frameborder="0" allowfullscreen></iframe>
+                   
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="item__title">
+                    Intro to AWS Mod 2
+                  </div>
+                  <div class="item__description">
+                    <strong>Key AWS Services</strong>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image video-container is-16by9">                  
+                    <iframe type="text/html" class="has-ratio" width="600" height="360" src="https://www.youtube.com/embed/vVvW8LldOsM" frameborder="0" allowfullscreen></iframe>
                   
-       
-       
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="item__title">
+                    Intro to AWS Mod 3
+                  </div>
+                  <div class="item__description">
+                    <strong>Tenets of AWS Networking</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image video-container is-16by9">                  
+                    <iframe type="text/html" class="has-ratio" width="600" height="360" src="https://www.youtube.com/embed/V9HIeARtk_M" frameborder="0" allowfullscreen></iframe>
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="item__title">
+                    Intro to AWS Mod 1
+                  </div>
+                  <div class="item__description">
+                    Basics of AWS
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         
+       
+        </div>
       </section>
                 
 </body>
